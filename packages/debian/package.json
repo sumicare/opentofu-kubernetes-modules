@@ -1,0 +1,42 @@
+{
+  "authors": [
+    "Yuriy Yarosh <yuriy@yarosh.dev>"
+  ],
+  "debianVersion": "trixie-20251117-slim",
+  "description": "Sumicare Images",
+  "devDependencies": {
+    "@sumicare/versioning": "workspace:*",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=25"
+  },
+  "name": "@sumicare/images",
+  "packageManager": "yarn@4.10.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "build": "cd modules/sumicare-images && tofu init && tofu apply -auto-approve",
+    "format": "run-p 'format:*'",
+    "format:go": "golangci-lint run --fix",
+    "format:opentofu": "tofu fmt -recursive .",
+    "generate": "versioning sync",
+    "lint": "run-p 'lint:*'",
+    "lint:go": "golangci-lint run",
+    "lint:opentofu": "run-p 'lint:opentofu:*'",
+    "lint:opentofu:checkov": "checkov --framework terraform --directory .",
+    "lint:opentofu:terrascan": "terrascan scan -t terraform -d .",
+    "lint:opentofu:tflint": "run-p 'lint:opentofu:tflint:debian-images' 'lint:opentofu:tflint:sumicare-images'",
+    "lint:opentofu:tflint:debian-images": "tflint --chdir modules/debian-images",
+    "lint:opentofu:tflint:sumicare-images": "tflint --chdir modules/sumicare-images",
+    "lint:opentofu:trivy": "trivy config --severity CRITICAL,HIGH --skip-files '**/*.tpl' .",
+    "lint:opentofu:validate": "tofu validate",
+    "report:sbom": "run-p 'report:sbom:*'",
+    "test": "ginkgo run -v --procs=32 --timeout=60s ./..."
+  },
+  "type": "module",
+  "version": "1.0.0"
+}

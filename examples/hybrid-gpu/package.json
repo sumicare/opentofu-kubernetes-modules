@@ -1,0 +1,34 @@
+{
+  "authors": [
+    "Yuriy Yarosh <yuriy@yarosh.dev>"
+  ],
+  "description": "Sumicare GKE Hybrid GPU Deployment Example",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=25"
+  },
+  "name": "@sumicare/examples-hybrid-gpu",
+  "packageManager": "yarn@4.10.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "format": "run-p 'format:*'",
+    "format:go": "golangci-lint run --fix",
+    "format:opentofu": "tofu fmt -recursive .",
+    "lint": "run-p 'lint:*'",
+    "lint:go": "golangci-lint run",
+    "lint:opentofu": "run-p 'lint:opentofu:*'",
+    "lint:opentofu:checkov": "checkov --framework terraform --directory .",
+    "lint:opentofu:terrascan": "terrascan scan -t terraform -d .",
+    "lint:opentofu:tflint": "tflint --recursive",
+    "lint:opentofu:trivy": "trivy config --severity CRITICAL,HIGH .",
+    "lint:opentofu:validate": "tofu validate"
+  },
+  "type": "module",
+  "version": "0.1.7"
+}

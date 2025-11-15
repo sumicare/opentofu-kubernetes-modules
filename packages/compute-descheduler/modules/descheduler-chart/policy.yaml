@@ -1,0 +1,61 @@
+#
+#   Copyright (c) 2025 Sumicare
+
+apiVersion: "descheduler/v1alpha2"
+kind: "DeschedulerPolicy"
+maxNoOfPodsToEvictPerNamespace: 10
+maxNoOfPodsToEvictPerNode: 10
+metricsProviders:
+  - source: KubernetesMetrics
+nodeSelector: key1=value1,key2=value2
+profiles:
+  - name: default
+    pluginConfig:
+      - args:
+          podProtections:
+            defaultDisabled:
+              - PodsWithLocalStorage
+            extraEnabled:
+              - PodsWithPVC
+        name: DefaultEvictor
+      - name: RemoveDuplicates
+      - args:
+          includingInitContainers: true
+          podRestartThreshold: 100
+        name: RemovePodsHavingTooManyRestarts
+      - args:
+          nodeAffinityType:
+            - requiredDuringSchedulingIgnoredDuringExecution
+        name: RemovePodsViolatingNodeAffinity
+      - name: RemovePodsViolatingNodeTaints
+      - name: RemovePodsViolatingInterPodAntiAffinity
+      - name: RemovePodsViolatingTopologySpreadConstraint
+      - args:
+          targetThresholds:
+            cpu: 50
+            memory: 50
+            pods: 50
+          thresholds:
+            cpu: 20
+            memory: 20
+            pods: 20
+        name: LowNodeUtilization
+    plugins:
+      balance:
+        enabled:
+          - RemoveDuplicates
+          - RemovePodsViolatingTopologySpreadConstraint
+          - LowNodeUtilization
+      deschedule:
+        enabled:
+          - RemovePodsHavingTooManyRestarts
+          - RemovePodsViolatingNodeTaints
+          - RemovePodsViolatingNodeAffinity
+          - RemovePodsViolatingInterPodAntiAffinity
+tracing:
+  collectorEndpoint: otel-collector.observability.svc.cluster.local:4317
+  fallbackToNoOpProviderOnError: true
+  sampleRate: 1
+  serviceName: ""
+  serviceNamespace: ""
+  transportCert: ""

@@ -1,0 +1,1 @@
+packages/storage-minio/modules/minio-chart/test

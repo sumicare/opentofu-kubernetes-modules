@@ -1,0 +1,71 @@
+locals {
+  versions_json = jsondecode(file("${path.module}/../../../../versions.json"))
+
+  debian_version = local.versions_json["debian"]
+
+  descheduler_version      = local.versions_json["compute-descheduler"]
+  goldilocks_version       = local.versions_json["compute-goldilocks"]
+  rollout_operator_version = local.versions_json["compute-grafana-rollout-operator"]
+  kamaji_version           = local.versions_json["compute-kamaji"]
+  keda_version             = local.versions_json["compute-keda"]
+  vpa_version              = local.versions_json["compute-vpa"]
+
+  atlas_operator_version   = local.versions_json["development-atlas-operator"]
+  dex_version              = local.versions_json["development-dex"]
+  tekton_chains_version    = local.versions_json["development-tekton-chains"]
+  tekton_dashboard_version = local.versions_json["development-tekton-dashboard"]
+  tekton_pipeline_version  = local.versions_json["development-tekton-pipeline"]
+  tekton_results_version   = local.versions_json["development-tekton-results"]
+  tekton_trigger_version   = local.versions_json["development-tekton-trigger"]
+  theia_version            = local.versions_json["development-theia"]
+  zot_version              = local.versions_json["development-zot"]
+
+  cloud_cost_exporter_version = local.versions_json["finops-cloud-cost-exporter"]
+  opencost_version            = local.versions_json["finops-opencost"]
+
+  argo_cd_version        = local.versions_json["gitops-argo-cd"]
+  argo_events_version    = local.versions_json["gitops-argo-events"]
+  argo_rollouts_version  = local.versions_json["gitops-argo-rollouts"]
+  argo_workflows_version = local.versions_json["gitops-argo-workflows"]
+
+  data_fusion_ballista_version = local.versions_json["mlops-data-fusion-ballista"]
+  kuberay_version              = local.versions_json["mlops-kuberay"]
+  ome_version                  = local.versions_json["mlops-ome"]
+  volcano_version              = local.versions_json["mlops-volcano"]
+
+  calico_version       = local.versions_json["networking-calico"]
+  external_dns_version = local.versions_json["networking-external-dns"]
+  gateway_api_version  = local.versions_json["networking-gateway-api"]
+  linkerd_version      = local.versions_json["networking-linkerd"]
+  linkerd_viz_version  = local.versions_json["networking-linkerd-viz"]
+
+  alloy_version              = local.versions_json["observability-alloy"]
+  grafana_version            = local.versions_json["observability-grafana"]
+  grafana_mcp_version        = local.versions_json["observability-grafana-mcp"]
+  kube_state_metrics_version = local.versions_json["observability-kube-state-metrics"]
+  loki_version               = local.versions_json["observability-loki"]
+  metrics_server_version     = local.versions_json["observability-metrics-server"]
+  mimir_version              = local.versions_json["observability-mimir"]
+  node_exporter_version      = local.versions_json["observability-node-exporter"]
+  prometheus_version         = local.versions_json["observability-prometheus"]
+  pyroscope_version          = local.versions_json["observability-pyroscope"]
+  tempo_version              = local.versions_json["observability-tempo"]
+
+  cert_manager_version     = local.versions_json["security-cert-manager"]
+  external_secrets_version = local.versions_json["security-external-secrets"]
+  falco_version            = local.versions_json["security-falco"]
+  kyverno_version          = local.versions_json["security-kyverno"]
+  openbao_version          = local.versions_json["security-openbao"]
+  openfga_version          = local.versions_json["security-openfga"]
+  reloader_version         = local.versions_json["security-reloader"]
+
+  cnpg_version                   = local.versions_json["storage-cnpg"]
+  k8ssandra_version              = local.versions_json["storage-k8ssandra"]
+  local_path_provisioner_version = local.versions_json["storage-local-path-provisioner"]
+  minio_version                  = local.versions_json["storage-minio"]
+  mongodb_version                = local.versions_json["storage-mongodb"]
+  pvc_autoresizer_version        = local.versions_json["storage-pvc-autoresizer"]
+  strimzi_version                = local.versions_json["storage-strimzi"]
+  valkey_version                 = local.versions_json["storage-valkey"]
+  velero_version                 = local.versions_json["storage-velero"]
+}

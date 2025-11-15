@@ -1,0 +1,34 @@
+{
+  "http": {
+    "accessControl": {
+      "adminPolicy": {
+        "actions": ["read", "create", "update", "delete"],
+        "users": ["admin"]
+      },
+      "repositories": {
+        "**": {
+          "defaultPolicy": [],
+          "policies": [
+            {
+              "actions": ["read"],
+              "users": ["user"]
+            }
+          ]
+        }
+      }
+    },
+    "address": "0.0.0.0",
+    "auth": {
+      "htpasswd": {
+        "path": "/secret/htpasswd"
+      }
+    },
+    "port": "5000"
+  },
+  "log": {
+    "level": "debug"
+  },
+  "storage": {
+    "rootDirectory": "/var/lib/registry"
+  }
+}

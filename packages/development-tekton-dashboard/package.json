@@ -1,0 +1,40 @@
+{
+  "authors": [
+    "Yuriy Yarosh <yuriy@yarosh.dev>"
+  ],
+  "description": "Sumicare Tekton Dashboard Chart",
+  "devDependencies": {
+    "@sumicare/images": "workspace:*",
+    "@sumicare/versioning": "workspace:*",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=25"
+  },
+  "name": "@sumicare/charts-development-tekton-dashboard",
+  "packageManager": "yarn@4.10.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "format": "run-p 'format:*'",
+    "format:go": "golangci-lint run --fix",
+    "format:opentofu": "tofu fmt -recursive .",
+    "generate": "versioning sync",
+    "lint": "run-p 'lint:*'",
+    "lint:go": "golangci-lint run",
+    "lint:opentofu": "run-p 'lint:opentofu:*'",
+    "lint:opentofu:checkov": "checkov --framework terraform --directory .",
+    "lint:opentofu:terrascan": "terrascan scan -t terraform -d .",
+    "lint:opentofu:tflint": "run-p 'lint:opentofu:tflint:tekton-dashboard-chart' 'lint:opentofu:tflint:tekton-dashboard-image'",
+    "lint:opentofu:tflint:tekton-dashboard-chart": "tflint --chdir modules/tekton-dashboard-chart",
+    "lint:opentofu:tflint:tekton-dashboard-image": "tflint --chdir modules/tekton-dashboard-image",
+    "lint:opentofu:trivy": "trivy config --severity CRITICAL,HIGH --skip-files '**/*.tpl' .",
+    "lint:opentofu:validate": "tofu validate",
+    "test": "ginkgo run -v --procs=32 --timeout=60s ./..."
+  },
+  "type": "module",
+  "version": "0.63.1"
+}

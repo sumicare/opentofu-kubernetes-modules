@@ -1,0 +1,59 @@
+#
+# Copyright 2025 Sumicare
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+###           DO NOT EDIT            ###
+# This file is automagically generated #
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkausers_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkausers.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkamirrormaker2s_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkamirrormaker2s.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkarebalances_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkarebalances.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkas_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkas.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkaconnects_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkaconnects.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkanodepools_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkanodepools.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkabridges_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkabridges.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkaconnectors_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkaconnectors.kafka.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_strimzipodsets_core_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/strimzipodsets.core.strimzi.io.yaml"))
+}
+
+resource "kubernetes_manifest" "customresourcedefinition_kafkatopics_kafka_strimzi_io" {
+  manifest = yamldecode(file("${path.module}/kafkatopics.kafka.strimzi.io.yaml"))
+}
+

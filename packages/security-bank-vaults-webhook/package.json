@@ -1,0 +1,43 @@
+{
+  "authors": [
+    "Yuriy Yarosh <yuriy@yarosh.dev>"
+  ],
+  "description": "Sumicare Bank Vaults Webhook Chart",
+  "devDependencies": {
+    "@sumicare/images": "workspace:*",
+    "@sumicare/versioning": "workspace:*",
+    "npm-run-all": "^4.1.5"
+  },
+  "engines": {
+    "node": ">=25"
+  },
+  "files": [
+    "modules/**/*"
+  ],
+  "name": "@sumicare/bank-vaults-webhook",
+  "packageManager": "yarn@4.10.3",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "format": "run-p 'format:*'",
+    "format:go": "golangci-lint run --fix",
+    "format:opentofu": "tofu fmt -recursive .",
+    "generate": "versioning sync",
+    "lint": "run-p 'lint:*'",
+    "lint:go": "golangci-lint run",
+    "lint:opentofu": "run-p 'lint:opentofu:*'",
+    "lint:opentofu:checkov": "checkov --framework terraform --directory .",
+    "lint:opentofu:terrascan": "terrascan scan -t terraform -d .",
+    "lint:opentofu:tflint": "run-p 'lint:opentofu:tflint:bank-vaults-webhook-chart' 'lint:opentofu:tflint:bank-vaults-webhook-image'",
+    "lint:opentofu:tflint:bank-vaults-webhook-chart": "tflint --chdir modules/bank-vaults-webhook-chart",
+    "lint:opentofu:tflint:bank-vaults-webhook-image": "tflint --chdir modules/bank-vaults-webhook-image",
+    "lint:opentofu:trivy": "trivy config --severity CRITICAL,HIGH --skip-files '**/*.tpl' .",
+    "lint:opentofu:validate": "tofu validate",
+    "test": "ginkgo run -v --procs=32 --timeout=60s ./..."
+  },
+  "type": "module",
+  "version": "0.3.0"
+}

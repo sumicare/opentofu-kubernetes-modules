@@ -1,0 +1,26 @@
+# Extracted 2 CRDs
+
+## scaledobjects.keda.sh.yaml
+```yaml
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: scaledobjects.keda.sh
+spec:
+  group: keda.sh
+  names:
+    kind: ScaledObject
+```
+
+## scaledjobs.keda.sh.yaml
+```yaml
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: scaledjobs.keda.sh
+spec:
+  group: keda.sh
+  names:
+    kind: ScaledJob
+```
+

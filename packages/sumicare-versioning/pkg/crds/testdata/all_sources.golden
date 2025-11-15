@@ -1,0 +1,173 @@
+---
+name: keda
+targetDir: packages/compute-keda/modules/keda-crds
+helmRepo:
+  name: kedacore
+  url: https://kedacore.github.io/charts
+chartName: keda
+---
+name: vpa
+targetDir: packages/compute-vpa/modules/vpa-crds
+crdURLs:  URLs
+---
+name: atlas-operator
+targetDir: packages/development-atlas-operator/modules/atlas-operator-crds
+githubDir:
+  owner: ariga
+  repo: atlas-operator
+  path: charts/atlas-operator/templates/crds
+  ref: master
+  filePattern: *.yaml
+---
+name: tekton-dashboard
+targetDir: packages/development-tekton-dashboard/modules/tekton-dashboard-crds
+githubDir:
+  owner: tektoncd
+  repo: dashboard
+  path: config
+  ref: main
+  filePattern: *.yaml
+---
+name: tekton-pipeline
+targetDir: packages/development-tekton-pipeline/modules/tekton-pipeline-crds
+githubDir:
+  owner: tektoncd
+  repo: pipeline
+  path: config/300-crds
+  ref: main
+  filePattern: *.yaml
+---
+name: tekton-triggers
+targetDir: packages/development-tekton-triggers/modules/tekton-triggers-crds
+githubDir:
+  owner: tektoncd
+  repo: triggers
+  path: config
+  ref: main
+  filePattern: *.yaml
+---
+name: theia
+targetDir: packages/development-theia/modules/theia-crds
+helmRepo:
+  name: theia-cloud
+  url: https://eclipse-theia.github.io/theia-cloud-helm
+chartName: theia-cloud-crds
+---
+name: argo-cd
+targetDir: packages/gitops-argo-cd/modules/argo-cd-crds
+helmRepo:
+  name: argo
+  url: https://argoproj.github.io/argo-helm
+chartName: argo-cd
+---
+name: argo-events
+targetDir: packages/gitops-argo-events/modules/argo-events-crds
+helmRepo:
+  name: argo
+  url: https://argoproj.github.io/argo-helm
+chartName: argo-events
+---
+name: argo-rollouts
+targetDir: packages/gitops-argo-rollouts/modules/argo-rollouts-crds
+helmRepo:
+  name: argo
+  url: https://argoproj.github.io/argo-helm
+chartName: argo-rollouts
+---
+name: argo-workflows
+targetDir: packages/gitops-argo-workflows/modules/argo-workflows-crds
+helmRepo:
+  name: argo
+  url: https://argoproj.github.io/argo-helm
+chartName: argo-workflows
+---
+name: volcano
+targetDir: packages/mlops-volcano/modules/volcano-crds
+crdURLs:  URLs
+---
+name: external-dns
+targetDir: packages/networking-external-dns/modules/external-dns-crds
+helmRepo:
+  name: external-dns
+  url: https://kubernetes-sigs.github.io/external-dns/
+chartName: external-dns
+---
+name: gateway-api
+targetDir: packages/networking-gateway-api/modules/gateway-api-crds
+githubDir:
+  owner: kubernetes-sigs
+  repo: gateway-api
+  path: config/crd/experimental
+  ref: main
+  filePattern: *.yaml
+---
+name: prometheus
+targetDir: packages/observability-prometheus/modules/prometheus-crds
+githubDir:
+  owner: prometheus-community
+  repo: helm-charts
+  path: charts/kube-prometheus-stack/charts/crds/crds
+  ref: main
+  filePattern: *.yaml
+---
+name: cert-manager
+targetDir: packages/security-cert-manager/modules/cert-manager-crds
+helmRepo:
+  name: cert-manager
+  url: https://charts.jetstack.io
+chartName: cert-manager
+---
+name: falco
+targetDir: packages/security-falco/modules/falco-crds
+githubDir:
+  owner: falcosecurity
+  repo: falco-operator
+  path: config/crd/bases
+  ref: main
+  filePattern: *.yaml
+---
+name: kyverno
+targetDir: packages/security-kyverno/modules/kyverno-crds
+githubDir:
+  owner: kyverno
+  repo: kyverno
+  path: charts/kyverno/charts/crds
+  ref: main
+  filePattern: *.yaml
+---
+name: cnpg
+targetDir: packages/storage-cnpg/modules/cnpg-crds
+helmRepo:
+  name: cnpg
+  url: https://cloudnative-pg.github.io/charts
+chartName: cloudnative-pg
+---
+name: k8ssandra
+targetDir: packages/storage-k8ssandra/modules/k8ssandra-crds
+githubDir:
+  owner: k8ssandra
+  repo: k8ssandra
+  path: charts/cass-operator/crds
+  ref: main
+  filePattern: *.yaml
+---
+name: minio
+targetDir: packages/storage-minio/modules/minio-crds
+helmRepo:
+  name: minio
+  url: https://operator.min.io/
+chartName: minio-operator
+---
+name: strimzi
+targetDir: packages/storage-strimzi/modules/strimzi-crds
+helmRepo:
+  name: strimzi
+  url: https://strimzi.io/charts/
+chartName: strimzi-kafka-operator
+---
+name: velero
+targetDir: packages/storage-velero/modules/velero-crds
+helmRepo:
+  name: vmware-tanzu
+  url: https://vmware-tanzu.github.io/helm-charts
+chartName: velero

@@ -1,8 +1,8 @@
 ## Sumicare [PVC Autoresizer](https://github.com/topolvm/pvc-autoresizer) OpenTofu Modules
 
-This module deploys [PVC Autoresizer](https://github.com/topolvm/pvc-autoresizer) to the cluster.
+Deploys [PVC Autoresizer](https://github.com/topolvm/pvc-autoresizer) for automatic persistent volume expansion.
 
-PVC Autoresizer is a Kubernetes operator that automatically expands PersistentVolumeClaims when they are running low on capacity.
+PVC Autoresizer monitors volume usage and automatically expands PVCs before they fill up, preventing application outages from disk pressure while optimizing storage costs by starting with smaller initial allocations.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "pvc_autoresizer" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

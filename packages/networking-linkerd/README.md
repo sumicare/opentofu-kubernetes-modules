@@ -1,8 +1,8 @@
 ## Sumicare [Linkerd](https://linkerd.io/) OpenTofu Modules
 
-This module deploys [Linkerd](https://linkerd.io/) to the cluster.
+Deploys [Linkerd](https://linkerd.io/) as a lightweight, security-focused service mesh.
 
-Linkerd is an ultralight, security-first service mesh for Kubernetes.
+Linkerd provides automatic mTLS, latency-aware load balancing, and golden metrics (success rate, latency, throughput) with minimal resource overhead, enabling zero-trust networking and observability without application code changes.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "linkerd" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

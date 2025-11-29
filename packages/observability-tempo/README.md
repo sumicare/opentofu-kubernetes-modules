@@ -1,8 +1,8 @@
 ## Sumicare [Tempo](https://github.com/grafana/tempo) OpenTofu Modules
 
-This module deploys [Tempo](https://github.com/grafana/tempo) to the cluster.
+Deploys [Tempo](https://github.com/grafana/tempo) for cost-effective distributed tracing.
 
-Grafana Tempo is an open source, easy-to-use, and high-scale distributed tracing backend.
+Grafana Tempo stores traces in object storage without indexing, dramatically reducing costs while supporting OpenTelemetry, Jaeger, and Zipkin formats with trace-to-logs/metrics correlation in Grafana for end-to-end request debugging.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "tempo" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

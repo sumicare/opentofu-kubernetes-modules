@@ -1,8 +1,8 @@
 ## Sumicare [Tekton Dashboard](https://github.com/tektoncd/dashboard) OpenTofu Modules
 
-This module deploys [Tekton Dashboard](https://github.com/tektoncd/dashboard) to the cluster.
+Deploys [Tekton Dashboard](https://github.com/tektoncd/dashboard) for visual CI/CD pipeline management.
 
-Tekton Dashboard is a general purpose, web-based UI for Tekton Pipelines and Tekton Triggers resources.
+Tekton Dashboard provides a web UI for monitoring and managing Tekton resources, including real-time pipeline/task execution logs, resource creation, and RBAC-aware multi-tenant access to CI/CD workflows.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "tekton_dashboard" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

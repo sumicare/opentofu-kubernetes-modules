@@ -1,8 +1,9 @@
 ## Sumicare [Atlas Operator](https://github.com/ariga/atlas-operator) OpenTofu Modules
 
-This module deploys [Atlas Operator](https://github.com/ariga/atlas-operator) to the cluster.
+Deploys [Atlas Operator](https://github.com/ariga/atlas-operator) for GitOps-native database schema management.
 
-Atlas Operator is a Kubernetes operator that enables declarative database schema management using Atlas.
+Atlas Operator brings declarative, version-controlled database migrations to Kubernetes, automatically applying schema changes through CRDs while supporting drift detection, 
+migration planning, and rollback capabilities across multiple database engines.
 
 ### Usage
 
@@ -44,5 +45,8 @@ module "atlas_operator" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

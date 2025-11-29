@@ -1,8 +1,8 @@
 ## Sumicare [External DNS](https://github.com/kubernetes-sigs/external-dns) OpenTofu Modules
 
-This module deploys [External DNS](https://github.com/kubernetes-sigs/external-dns) to the cluster.
+Deploys [External DNS](https://github.com/kubernetes-sigs/external-dns) for automatic DNS record management.
 
-ExternalDNS synchronizes exposed Kubernetes Services and Ingresses with DNS providers.
+ExternalDNS watches Services, Ingresses, and Gateway API resources to automatically create and update DNS records in providers like Route53, CloudFlare, and Google Cloud DNS, eliminating manual DNS configuration for Kubernetes workloads.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "external_dns" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

@@ -1,8 +1,8 @@
 ## Sumicare [Grafana MCP](https://github.com/grafana/mcp-grafana) OpenTofu Modules
 
-This module deploys [Grafana MCP](https://github.com/grafana/mcp-grafana) to the cluster.
+Deploys [Grafana MCP](https://github.com/grafana/mcp-grafana) for AI-assisted observability.
 
-Grafana MCP is a Model Context Protocol server for Grafana.
+Grafana MCP implements the Model Context Protocol to expose Grafana dashboards, alerts, and data sources to LLMs, enabling natural language queries for metrics exploration, incident investigation, and automated dashboard generation.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "grafana_mcp" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

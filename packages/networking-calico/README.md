@@ -1,8 +1,8 @@
 ## Sumicare [Calico](https://github.com/projectcalico/calico) OpenTofu Modules
 
-This module deploys [Calico](https://github.com/projectcalico/calico) to the cluster.
+Deploys [Calico](https://github.com/projectcalico/calico) for high-performance networking and network policy.
 
-Calico is an open source networking and network security solution for containers, virtual machines, and native host-based workloads.
+Calico provides a CNI plugin with BGP-based routing, network policies for microsegmentation, and eBPF dataplane options, enabling scalable pod networking with fine-grained security controls and observability across hybrid cloud environments.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "calico" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

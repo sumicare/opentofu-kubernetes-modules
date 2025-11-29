@@ -1,8 +1,8 @@
 ## Sumicare [Eclipse Theia](https://github.com/eclipse-theia/theia) OpenTofu Modules
 
-This module deploys [Eclipse Theia](https://github.com/eclipse-theia/theia) to the cluster.
+Deploys [Eclipse Theia](https://github.com/eclipse-theia/theia) as a cloud-native development environment.
 
-Eclipse Theia is an extensible platform to develop multi-language Cloud & Desktop IDEs with state-of-the-art web technologies.
+Eclipse Theia provides a VS Code-compatible, browser-based IDE that runs in Kubernetes, enabling remote development with full language server support, terminal access, and extension compatibility while keeping source code secure within the cluster.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "theia" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

@@ -1,8 +1,8 @@
 ## Sumicare [K8ssandra](https://github.com/k8ssandra/k8ssandra-operator) OpenTofu Modules
 
-This module deploys [K8ssandra](https://github.com/k8ssandra/k8ssandra-operator) to the cluster.
+Deploys [K8ssandra](https://github.com/k8ssandra/k8ssandra-operator) for production-grade Cassandra on Kubernetes.
 
-K8ssandra is a Kubernetes operator for Apache Cassandra that provides a production-ready platform for running Cassandra on Kubernetes.
+K8ssandra provides automated Cassandra cluster management with multi-datacenter replication, integrated backup/restore (Medusa), monitoring (Reaper for repairs), and Stargate APIs, simplifying distributed database operations at scale.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "k8ssandra" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

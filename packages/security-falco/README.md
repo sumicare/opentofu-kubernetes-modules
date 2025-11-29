@@ -1,8 +1,8 @@
 ## Sumicare [Falco](https://github.com/falcosecurity/falco) OpenTofu Modules
 
-This module deploys [Falco](https://github.com/falcosecurity/falco) to the cluster.
+Deploys [Falco](https://github.com/falcosecurity/falco) for runtime threat detection and security monitoring.
 
-Falco is a cloud-native runtime security tool for Linux operating systems that detects unexpected application behavior and alerts on threats at runtime.
+Falco uses eBPF/kernel modules to detect anomalous syscalls, container escapes, and policy violations in real-time, providing intrusion detection with customizable rules and integration with SIEM/alerting systems for incident response.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "falco" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

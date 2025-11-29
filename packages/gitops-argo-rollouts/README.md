@@ -1,8 +1,8 @@
 ## Sumicare [Argo Rollouts](https://github.com/argoproj/argo-rollouts) OpenTofu Modules
 
-This module deploys [Argo Rollouts](https://github.com/argoproj/argo-rollouts) to the cluster.
+Deploys [Argo Rollouts](https://github.com/argoproj/argo-rollouts) for progressive delivery and deployment strategies.
 
-Argo Rollouts is a Kubernetes controller and set of CRDs which provide advanced deployment capabilities such as blue-green, canary, canary analysis, experimentation, and progressive delivery features.
+Argo Rollouts extends Kubernetes Deployments with blue-green, canary, and experimentation capabilities, integrating with service meshes and ingress controllers for traffic shifting while supporting automated rollback based on metrics analysis.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "argo_rollouts" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

@@ -1,8 +1,8 @@
 ## Sumicare [cert-manager](https://github.com/cert-manager/cert-manager) OpenTofu Modules
 
-This module deploys [cert-manager](https://github.com/cert-manager/cert-manager) to the cluster.
+Deploys [cert-manager](https://github.com/cert-manager/cert-manager) for automated TLS certificate lifecycle management.
 
-cert-manager is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.
+cert-manager automates certificate issuance and renewal from Let's Encrypt, Vault, Venafi, and private CAs, managing certificates as Kubernetes resources with automatic rotation and integration with Ingress and Gateway API.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "cert_manager" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

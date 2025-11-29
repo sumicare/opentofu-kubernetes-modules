@@ -1,8 +1,8 @@
 ## Sumicare [KubeRay](https://github.com/ray-project/kuberay) OpenTofu Modules
 
-This module deploys [KubeRay](https://github.com/ray-project/kuberay) to the cluster.
+Deploys [KubeRay](https://github.com/ray-project/kuberay) for distributed ML and Python workloads.
 
-KubeRay is a Kubernetes operator for Ray, making it easy to run Ray applications on Kubernetes.
+KubeRay manages Ray clusters on Kubernetes with autoscaling, fault tolerance, and GPU scheduling, enabling distributed training, hyperparameter tuning, reinforcement learning, and model serving with seamless integration into ML pipelines.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "kuberay" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

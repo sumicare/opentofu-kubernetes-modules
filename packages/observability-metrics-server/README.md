@@ -1,8 +1,8 @@
 ## Sumicare [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) OpenTofu Modules
 
-This module deploys [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) to the cluster.
+Deploys [Metrics Server](https://github.com/kubernetes-sigs/metrics-server) for core Kubernetes resource metrics.
 
-Metrics Server is a scalable, efficient source of container resource metrics for Kubernetes built-in autoscaling pipelines.
+Metrics Server provides real-time CPU and memory metrics required by HPA, VPA, and `kubectl top` commands, collecting data from kubelets and exposing it through the Kubernetes Metrics API for cluster-wide resource visibility.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "metrics_server" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

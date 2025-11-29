@@ -1,8 +1,8 @@
 ## Sumicare [Grafana](https://github.com/grafana/grafana) OpenTofu Modules
 
-This module deploys [Grafana](https://github.com/grafana/grafana) to the cluster.
+Deploys [Grafana](https://github.com/grafana/grafana) for unified observability visualization.
 
-Grafana is the open source analytics and monitoring solution for every database.
+Grafana provides rich dashboards and alerting for metrics, logs, and traces from 100+ data sources, enabling correlation across Prometheus, Loki, Tempo, and cloud providers with team collaboration, RBAC, and enterprise SSO support.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "grafana" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

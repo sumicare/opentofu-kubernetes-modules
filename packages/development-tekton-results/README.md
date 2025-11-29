@@ -1,8 +1,9 @@
 ## Sumicare [Tekton Results](https://github.com/tektoncd/results) OpenTofu Modules
 
-This module deploys [Tekton Results](https://github.com/tektoncd/results) to the cluster.
+Deploys [Tekton Results](https://github.com/tektoncd/results) for persistent CI/CD execution history.
 
-Tekton Results aims to help users logically group CI/CD workload history and separate out long-term result storage away from the pipeline controller.
+Tekton Results stores pipeline and task run data in a dedicated backend (PostgreSQL/GCS/S3), enabling long-term retention, efficient querying, 
+and reduced etcd load while providing a gRPC/REST API for build analytics and compliance auditing.
 
 ### Usage
 
@@ -44,5 +45,8 @@ module "tekton_results" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

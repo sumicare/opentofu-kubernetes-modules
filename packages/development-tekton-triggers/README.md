@@ -1,8 +1,8 @@
 ## Sumicare [Tekton Triggers](https://github.com/tektoncd/triggers) OpenTofu Modules
 
-This module deploys [Tekton Triggers](https://github.com/tektoncd/triggers) to the cluster.
+Deploys [Tekton Triggers](https://github.com/tektoncd/triggers) for event-driven pipeline automation.
 
-Tekton Triggers is a Kubernetes Custom Resource Definition (CRD) controller that allows you to create Kubernetes resources based on information extracted from event payloads.
+Tekton Triggers enables automatic pipeline execution from external events (webhooks, cloud events), extracting payload data to parameterize builds and supporting GitHub/GitLab/Bitbucket integrations for true GitOps CI/CD workflows.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "tekton_triggers" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

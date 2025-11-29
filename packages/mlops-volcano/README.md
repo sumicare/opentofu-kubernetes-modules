@@ -1,8 +1,8 @@
 ## Sumicare [Volcano](https://github.com/volcano-sh/volcano) OpenTofu Modules
 
-This module deploys [Volcano](https://github.com/volcano-sh/volcano) to the cluster.
+Deploys [Volcano](https://github.com/volcano-sh/volcano) for batch and HPC workload scheduling.
 
-Volcano is a batch system built on Kubernetes for high-performance workloads including machine learning, deep learning, bioinformatics, and genomics.
+Volcano extends Kubernetes scheduling with gang scheduling, fair-share queuing, and preemption policies essential for ML training, MPI jobs, Spark, and scientific computing workloads that require coordinated multi-pod scheduling and resource guarantees.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "volcano" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

@@ -1,8 +1,8 @@
 ## Sumicare [Cloud Cost Exporter](https://github.com/grafana/cloudcost-exporter) OpenTofu Modules
 
-This module deploys [Cloud Cost Exporter](https://github.com/grafana/cloudcost-exporter) to the cluster.
+Deploys [Cloud Cost Exporter](https://github.com/grafana/cloudcost-exporter) for cloud spend visibility in Prometheus.
 
-Cloud Cost Exporter is a Prometheus exporter that collects cloud cost data from various cloud providers.
+Cloud Cost Exporter scrapes billing data from AWS, GCP, and Azure APIs, exposing cost metrics that can be correlated with resource utilization in Grafana dashboards for comprehensive FinOps analysis and chargeback reporting.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "cloud_cost_exporter" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

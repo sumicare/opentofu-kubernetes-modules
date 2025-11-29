@@ -1,8 +1,8 @@
 ## Sumicare [Grafana Alloy](https://github.com/grafana/alloy) OpenTofu Modules
 
-This module deploys [Grafana Alloy](https://github.com/grafana/alloy) to the cluster.
+Deploys [Grafana Alloy](https://github.com/grafana/alloy) as a unified telemetry collector.
 
-Grafana Alloy is an OpenTelemetry Collector distribution with configuration inspired by Terraform.
+Grafana Alloy combines metrics, logs, traces, and profiles collection in a single agent with HCL-based configuration, supporting OpenTelemetry, Prometheus, Loki, and Pyroscope protocols while enabling dynamic pipeline composition and service discovery.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "alloy" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

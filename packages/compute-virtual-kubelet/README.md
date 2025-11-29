@@ -1,8 +1,8 @@
 ## Sumicare [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) OpenTofu Modules
 
-This module deploys [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) to the cluster.
+Deploys [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) to extend cluster capacity with external compute.
 
-Virtual Kubelet is an open source Kubernetes kubelet implementation that masquerades as a kubelet for the purposes of connecting Kubernetes to other APIs.
+Virtual Kubelet presents external services (serverless platforms, IoT devices, other clusters) as virtual nodes in Kubernetes, enabling seamless workload bursting to cloud providers or hybrid infrastructure without managing additional physical nodes.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "virtual_kubelet" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

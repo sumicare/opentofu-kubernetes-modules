@@ -1,8 +1,8 @@
 ## Sumicare [Tekton Chains](https://github.com/tektoncd/chains) OpenTofu Modules
 
-This module deploys [Tekton Chains](https://github.com/tektoncd/chains) to the cluster.
+Deploys [Tekton Chains](https://github.com/tektoncd/chains) for software supply chain security and attestation.
 
-Tekton Chains is a Kubernetes Custom Resource Definition (CRD) controller that allows you to manage your supply chain security in Tekton Pipelines.
+Tekton Chains automatically signs pipeline artifacts and generates SLSA provenance attestations, providing cryptographic proof of build integrity and enabling secure software supply chain verification with Sigstore/cosign integration.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "tekton_chains" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

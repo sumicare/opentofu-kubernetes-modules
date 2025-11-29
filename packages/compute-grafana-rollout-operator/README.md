@@ -1,8 +1,8 @@
 ## Sumicare [Grafana Rollout Operator](https://github.com/grafana/rollout-operator) OpenTofu Modules
 
-This module deploys [Grafana Rollout Operator](https://github.com/grafana/rollout-operator) to the cluster.
+Deploys [Grafana Rollout Operator](https://github.com/grafana/rollout-operator) for coordinated StatefulSet updates.
 
-Grafana Rollout Operator coordinates the rollout of pods between different StatefulSets within a specific namespace.
+Grafana Rollout Operator orchestrates safe, ordered rollouts across multiple StatefulSets in a namespace, ensuring dependent services are updated in the correct sequence with configurable parallelism and health checks.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "grafana_rollout_operator" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

@@ -1,8 +1,8 @@
 ## Sumicare [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) OpenTofu Modules
 
-This module deploys [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) to the cluster.
+Deploys [Kube State Metrics](https://github.com/kubernetes/kube-state-metrics) for Kubernetes object state monitoring.
 
-Kube State Metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.
+Kube State Metrics exposes Prometheus metrics for Kubernetes objects (deployments, pods, nodes, PVCs), enabling alerting on desired vs actual state, resource quotas, and workload health without instrumenting applications.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "kube_state_metrics" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

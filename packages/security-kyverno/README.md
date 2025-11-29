@@ -1,8 +1,8 @@
 ## Sumicare [Kyverno](https://github.com/kyverno/kyverno) OpenTofu Modules
 
-This module deploys [Kyverno](https://github.com/kyverno/kyverno) to the cluster.
+Deploys [Kyverno](https://github.com/kyverno/kyverno) for Kubernetes-native policy enforcement.
 
-Kyverno is a policy engine designed for Kubernetes that can validate, mutate, and generate configurations using admission controls and background scans.
+Kyverno validates, mutates, and generates Kubernetes resources using policies written as CRDs (no new language required), enforcing security standards, best practices, and compliance requirements at admission time and through background scans.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "kyverno" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

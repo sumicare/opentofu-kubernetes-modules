@@ -1,8 +1,8 @@
 ## Sumicare [Argo Events](https://github.com/argoproj/argo-events) OpenTofu Modules
 
-This module deploys [Argo Events](https://github.com/argoproj/argo-events) to the cluster.
+Deploys [Argo Events](https://github.com/argoproj/argo-events) for event-driven workflow orchestration.
 
-Argo Events is an event-driven workflow automation framework for Kubernetes.
+Argo Events connects 20+ event sources (webhooks, S3, Kafka, NATS, cron) to triggers that spawn Argo Workflows, Kubernetes resources, or HTTP requests, enabling reactive automation patterns and complex event processing pipelines.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "argo_events" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

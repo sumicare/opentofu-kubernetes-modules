@@ -290,12 +290,7 @@ func renderTemplates(syncVersions versions.VersionsFile) error {
 		}
 
 		// Determine output path
-		var outputPath string
-		if before, ok := strings.CutSuffix(path, ".tf.tpl"); ok {
-			outputPath = before + ".gen.tf"
-		} else {
-			outputPath = strings.TrimSuffix(path, ".tpl")
-		}
+		outputPath := strings.TrimSuffix(path, ".tpl")
 
 		// Prepare template data
 		data := templating.TemplateData{

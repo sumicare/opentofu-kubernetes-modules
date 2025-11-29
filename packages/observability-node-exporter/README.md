@@ -1,8 +1,8 @@
 ## Sumicare [Node Exporter](https://github.com/prometheus/node_exporter) OpenTofu Modules
 
-This module deploys [Node Exporter](https://github.com/prometheus/node_exporter) to the cluster.
+Deploys [Node Exporter](https://github.com/prometheus/node_exporter) for host-level infrastructure metrics.
 
-Node Exporter is a Prometheus exporter for hardware and OS metrics exposed by *NIX kernels.
+Node Exporter collects detailed system metrics (CPU, memory, disk, network, filesystem) from each Kubernetes node, enabling infrastructure monitoring, capacity planning, and alerting on hardware-level issues independent of container workloads.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "node_exporter" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

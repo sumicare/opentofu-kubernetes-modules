@@ -1,8 +1,8 @@
 ## Sumicare [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) OpenTofu Modules
 
-This module deploys [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) to the cluster.
+Deploys [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler) for automatic resource right-sizing.
 
-Vertical Pod Autoscaler (VPA) frees users from the necessity of setting up-to-date resource requests for the containers in their pods. VPA is a pre-requisite for [Goldilocks](../compute-goldilocks/).
+VPA continuously analyzes container resource usage and automatically adjusts CPU/memory requests and limits, eliminating manual tuning while optimizing cluster utilization. Required for [Goldilocks](../compute-goldilocks/) recommendations.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "vpa" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

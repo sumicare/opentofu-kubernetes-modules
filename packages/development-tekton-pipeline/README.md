@@ -1,8 +1,8 @@
 ## Sumicare [Tekton Pipeline](https://github.com/tektoncd/pipeline) OpenTofu Modules
 
-This module deploys [Tekton Pipeline](https://github.com/tektoncd/pipeline) to the cluster.
+Deploys [Tekton Pipeline](https://github.com/tektoncd/pipeline) as the foundation for Kubernetes-native CI/CD.
 
-Tekton Pipelines is a Kubernetes-native CI/CD solution that provides cloud-native building blocks for creating CI/CD systems.
+Tekton Pipelines provides declarative, reusable CI/CD building blocks (Tasks, Pipelines, Workspaces) that run as Kubernetes pods, enabling portable, scalable automation with built-in artifact management and parallel execution.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "tekton_pipeline" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

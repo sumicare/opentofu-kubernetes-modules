@@ -1,8 +1,8 @@
 ## Sumicare [Bank-Vaults Webhook](https://github.com/bank-vaults/secrets-webhook) OpenTofu Modules
 
-This module deploys [Bank-Vaults Webhook](https://github.com/bank-vaults/secrets-webhook) to the cluster.
+Deploys [Bank-Vaults Webhook](https://github.com/bank-vaults/secrets-webhook) for transparent Vault secret injection.
 
-Bank-Vaults Secrets Webhook is a mutating webhook that injects secrets from Vault into Kubernetes pods.
+Bank-Vaults Secrets Webhook mutates pods at admission to inject Vault secrets as environment variables or files, enabling applications to consume secrets without Vault SDK integration or code changes.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "bank_vaults_webhook" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

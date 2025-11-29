@@ -1,8 +1,8 @@
 ## Sumicare [Dex](https://github.com/dexidp/dex) OpenTofu Modules
 
-This module deploys [Dex](https://github.com/dexidp/dex) to the cluster.
+Deploys [Dex](https://github.com/dexidp/dex) as a federated OpenID Connect identity provider.
 
-Dex is an identity service that uses OpenID Connect to drive authentication for other apps. It acts as a portal to other identity providers through connectors.
+Dex acts as an authentication broker that unifies multiple identity sources (LDAP, SAML, GitHub, Google, OIDC) into a single OIDC interface, enabling consistent SSO across Kubernetes and cloud-native applications.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "dex" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

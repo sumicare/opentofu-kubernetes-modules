@@ -1,8 +1,8 @@
 ## Sumicare [Bank-Vaults Operator](https://github.com/bank-vaults/vault-operator) OpenTofu Modules
 
-This module deploys [Bank-Vaults Operator](https://github.com/bank-vaults/vault-operator) to the cluster.
+Deploys [Bank-Vaults Operator](https://github.com/bank-vaults/vault-operator) for automated Vault cluster management.
 
-Bank-Vaults Operator is a Kubernetes operator for HashiCorp Vault that makes it easy to deploy and manage Vault clusters.
+Bank-Vaults Operator provisions and manages HashiCorp Vault clusters on Kubernetes with automated unsealing, configuration-as-code, backup/restore, and HA setup, simplifying secrets management infrastructure operations.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "bank_vaults_operator" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

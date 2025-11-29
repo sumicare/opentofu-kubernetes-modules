@@ -1,8 +1,8 @@
 ## Sumicare [Pyroscope](https://github.com/grafana/pyroscope) OpenTofu Modules
 
-This module deploys [Pyroscope](https://github.com/grafana/pyroscope) to the cluster.
+Deploys [Pyroscope](https://github.com/grafana/pyroscope) for continuous profiling and performance analysis.
 
-Grafana Pyroscope is an open source continuous profiling platform for debugging performance issues.
+Grafana Pyroscope captures CPU, memory, and goroutine profiles with minimal overhead, enabling flame graph visualization to identify performance bottlenecks, memory leaks, and optimization opportunities in production workloads.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "pyroscope" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

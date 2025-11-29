@@ -1,8 +1,8 @@
 ## Sumicare [Prometheus](https://github.com/prometheus/prometheus) OpenTofu Modules
 
-This module deploys [Prometheus](https://github.com/prometheus/prometheus) to the cluster.
+Deploys [Prometheus](https://github.com/prometheus/prometheus) for pull-based metrics collection and alerting.
 
-Prometheus is a systems and service monitoring system that collects metrics from configured targets at given intervals.
+Prometheus scrapes metrics from instrumented applications and infrastructure, storing time-series data with a powerful query language (PromQL) and integrating with Alertmanager for flexible notification routing based on metric thresholds.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "prometheus" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

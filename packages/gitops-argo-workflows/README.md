@@ -1,8 +1,8 @@
 ## Sumicare [Argo Workflows](https://github.com/argoproj/argo-workflows) OpenTofu Modules
 
-This module deploys [Argo Workflows](https://github.com/argoproj/argo-workflows) to the cluster.
+Deploys [Argo Workflows](https://github.com/argoproj/argo-workflows) for complex job orchestration on Kubernetes.
 
-Argo Workflows is an open source container-native workflow engine for orchestrating parallel jobs on Kubernetes.
+Argo Workflows enables DAG and step-based workflows with parallel execution, artifact passing, retries, and timeouts—ideal for CI/CD pipelines, data processing, ML training, and batch jobs with a powerful templating system and web UI.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "argo_workflows" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

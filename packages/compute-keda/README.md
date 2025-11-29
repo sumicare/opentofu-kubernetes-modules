@@ -1,8 +1,8 @@
 ## Sumicare [KEDA](https://github.com/kedacore/keda) OpenTofu Modules
 
-This module deploys [KEDA](https://github.com/kedacore/keda) to the cluster.
+Deploys [KEDA](https://github.com/kedacore/keda) for event-driven autoscaling beyond CPU/memory metrics.
 
-KEDA (Kubernetes Event-driven Autoscaling) is a single-purpose and lightweight component that can be added to any Kubernetes cluster. It allows for fine-grained autoscaling for event-driven workloads.
+KEDA extends Kubernetes HPA with 60+ scalers for external event sources like message queues (Kafka, RabbitMQ), databases, cloud services, and custom metrics, enabling scale-to-zero and fine-grained scaling based on actual workload demand.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "keda" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

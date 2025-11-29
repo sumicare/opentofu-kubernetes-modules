@@ -1,8 +1,8 @@
 ## Sumicare [OpenCost](https://github.com/opencost/opencost) OpenTofu Modules
 
-This module deploys [OpenCost](https://github.com/opencost/opencost) to the cluster.
+Deploys [OpenCost](https://github.com/opencost/opencost) for real-time Kubernetes cost allocation.
 
-OpenCost is a vendor-neutral open source project for measuring and allocating infrastructure and container costs in real time.
+OpenCost provides granular cost visibility by namespace, deployment, pod, and label, combining cloud billing data with actual resource consumption to enable accurate showback/chargeback, budget alerts, and cost optimization recommendations.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "opencost" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

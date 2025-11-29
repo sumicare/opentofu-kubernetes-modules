@@ -1,8 +1,8 @@
 ## Sumicare [Linkerd Viz](https://github.com/linkerd/linkerd-viz) OpenTofu Modules
 
-This module deploys [Linkerd Viz](https://github.com/linkerd/linkerd-viz) to the cluster.
+Deploys [Linkerd Viz](https://github.com/linkerd/linkerd-viz) for service mesh observability.
 
-Linkerd Viz is the observability extension for Linkerd, providing a dashboard and metrics for your service mesh.
+Linkerd Viz adds a web dashboard, Prometheus metrics, and Grafana dashboards to Linkerd, visualizing service dependencies, request flows, and golden metrics with tap/top commands for real-time traffic inspection and debugging.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "linkerd_viz" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

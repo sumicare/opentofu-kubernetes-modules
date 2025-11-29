@@ -1,6 +1,8 @@
-## Sumicare Debian Terraform Modules
+## Sumicare Debian OpenTofu Modules
 
-Builds base build and distroless terraform modules.
+Provides secure, minimal Debian-based container images for all Sumicare modules.
+
+Includes both build images (with toolchains) and distroless runtime images, ensuring consistent base layers across the stack with automated security updates and reduced attack surface.
 
 ### Usage
 
@@ -17,8 +19,15 @@ module "debian_images" {
 
 ### Parameters
 
+| Name           | Description                     | Type   | Default                  | Required   |
+|----------------|---------------------------------|--------|--------------------------|------------|
+| debian_version | Base Images Debian version      | string | `"trixie-20251117-slim"` | no         |
+
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

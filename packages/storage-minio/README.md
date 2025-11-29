@@ -1,8 +1,8 @@
 ## Sumicare [MinIO](https://min.io/) OpenTofu Modules
 
-This module deploys [MinIO](https://min.io/) to the cluster.
+Deploys [MinIO](https://min.io/) for S3-compatible object storage on Kubernetes.
 
-MinIO is a high-performance, S3 compatible object storage solution.
+MinIO provides high-performance, distributed object storage with full S3 API compatibility, enabling cloud-native applications to use familiar S3 SDKs while keeping data on-premises or in any cloud with erasure coding and encryption.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "minio" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

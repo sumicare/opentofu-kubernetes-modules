@@ -1,8 +1,8 @@
 ## Sumicare [OME](https://github.com/sgl-project/ome) OpenTofu Modules
 
-This module deploys [OME](https://github.com/sgl-project/ome) to the cluster.
+Deploys [OME](https://github.com/sgl-project/ome) for high-throughput LLM inference serving.
 
-OME (Open Model Engine) is a high-performance inference engine for large language models.
+OME (Open Model Engine) provides optimized inference for large language models with continuous batching, PagedAttention, and tensor parallelism, delivering production-grade LLM serving with OpenAI-compatible APIs and efficient GPU utilization.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "ome" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

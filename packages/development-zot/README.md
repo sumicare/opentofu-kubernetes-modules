@@ -1,8 +1,8 @@
 ## Sumicare [Zot](https://github.com/project-zot/zot) OpenTofu Modules
 
-This module deploys [Zot](https://github.com/project-zot/zot) to the cluster.
+Deploys [Zot](https://github.com/project-zot/zot) as a lightweight OCI-native artifact registry.
 
-Zot is a production-ready vendor-neutral OCI-native container image registry.
+Zot provides a single-binary, vendor-neutral registry for container images and OCI artifacts with built-in deduplication, garbage collection, and optional S3 backend support—ideal for air-gapped environments and edge deployments.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "zot" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

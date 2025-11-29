@@ -1,8 +1,8 @@
 ## Sumicare [Argo CD](https://github.com/argoproj/argo-cd) OpenTofu Modules
 
-This module deploys [Argo CD](https://github.com/argoproj/argo-cd) to the cluster.
+Deploys [Argo CD](https://github.com/argoproj/argo-cd) for declarative GitOps continuous delivery.
 
-Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes.
+Argo CD continuously reconciles cluster state with Git repositories, providing automated deployments, drift detection, rollback capabilities, and a web UI for managing applications across multiple clusters with RBAC and SSO integration.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "argo_cd" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

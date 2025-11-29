@@ -1,8 +1,8 @@
 ## Sumicare [Descheduler](https://github.com/kubernetes-sigs/descheduler) OpenTofu Modules
 
-This module deploys [Descheduler](https://github.com/kubernetes-sigs/descheduler) to the cluster, as [deployment](https://github.com/kubernetes-sigs/descheduler?tab=readme-ov-file#quick-start).
+Deploys [Descheduler](https://github.com/kubernetes-sigs/descheduler) to optimize pod placement across cluster nodes.
 
-Descheduler is a Kubernetes operator that deschedules pods in order to resolve accumulated scheduling issues over time.
+Descheduler evicts pods based on configurable policies to rebalance workloads, addressing issues like node underutilization, pod affinity violations, and taint/toleration mismatches that accumulate over time as cluster state changes.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "descheduler" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

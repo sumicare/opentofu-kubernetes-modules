@@ -1,8 +1,8 @@
 ## Sumicare [Goldilocks](https://github.com/FairwindsOps/goldilocks) OpenTofu Modules
 
-This module deploys [Goldilocks](https://github.com/FairwindsOps/goldilocks) to the cluster.
+Deploys [Goldilocks](https://github.com/FairwindsOps/goldilocks) for right-sizing Kubernetes workload resources.
 
-Goldilocks is a Kubernetes operator that enforces resource requests and limits based on the cluster's capacity. It automatically creates VPA custom resources for each target namespace.
+Goldilocks provides a dashboard that analyzes VPA recommendations to help identify optimal CPU and memory requests/limits for your workloads, reducing over-provisioning costs while preventing resource starvation.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "goldilocks" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

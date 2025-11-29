@@ -1,8 +1,8 @@
 ## Sumicare [Strimzi](https://github.com/strimzi/strimzi-kafka-operator) OpenTofu Modules
 
-This module deploys [Strimzi](https://github.com/strimzi/strimzi-kafka-operator) to the cluster.
+Deploys [Strimzi](https://github.com/strimzi/strimzi-kafka-operator) for Kubernetes-native Apache Kafka management.
 
-Strimzi provides a way to run an Apache Kafka cluster on Kubernetes in various deployment configurations.
+Strimzi operates Kafka clusters, topics, users, and connectors through CRDs, providing automated rolling updates, rack awareness, TLS encryption, and authentication while integrating with Kubernetes storage and networking primitives.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "strimzi" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

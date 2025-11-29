@@ -1,8 +1,8 @@
 ## Sumicare [Kamaji](https://github.com/clastix/kamaji) OpenTofu Modules
 
-This module deploys [Kamaji](https://github.com/clastix/kamaji) to the cluster.
+Deploys [Kamaji](https://github.com/clastix/kamaji) for multi-tenant Kubernetes control plane management.
 
-Kamaji is a Kubernetes operator that turns any Kubernetes cluster into a management cluster to host control planes of other Kubernetes clusters.
+Kamaji enables hosting multiple Kubernetes control planes as pods within a single management cluster, dramatically reducing infrastructure costs and operational overhead for multi-cluster environments while maintaining full tenant isolation.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "kamaji" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

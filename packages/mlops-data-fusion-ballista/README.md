@@ -1,8 +1,8 @@
 ## Sumicare [DataFusion Ballista](https://github.com/apache/datafusion-ballista) OpenTofu Modules
 
-This module deploys [DataFusion Ballista](https://github.com/apache/datafusion-ballista) to the cluster.
+Deploys [DataFusion Ballista](https://github.com/apache/datafusion-ballista) for distributed SQL analytics.
 
-Apache DataFusion Ballista is a distributed SQL query engine powered by Apache Arrow.
+Ballista provides a Spark-like distributed query engine built on Apache Arrow and DataFusion, enabling high-performance SQL queries over Parquet, CSV, and JSON data with Kubernetes-native scaling and memory-efficient columnar processing.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "data_fusion_ballista" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

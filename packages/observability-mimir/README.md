@@ -1,8 +1,8 @@
 ## Sumicare [Mimir](https://github.com/grafana/mimir) OpenTofu Modules
 
-This module deploys [Mimir](https://github.com/grafana/mimir) to the cluster.
+Deploys [Mimir](https://github.com/grafana/mimir) for scalable long-term Prometheus storage.
 
-Grafana Mimir is an open source, horizontally scalable, highly available, multi-tenant TSDB for long-term storage for Prometheus.
+Grafana Mimir provides unlimited cardinality, multi-tenant isolation, and global query views across Prometheus instances, with object storage backends (S3/GCS/Azure) enabling cost-effective retention of years of metrics data at scale.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "mimir" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

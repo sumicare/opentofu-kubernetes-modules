@@ -1,8 +1,8 @@
 ## Sumicare [Gateway API](https://github.com/kubernetes-sigs/gateway-api) OpenTofu Modules
 
-This module deploys [Gateway API](https://github.com/kubernetes-sigs/gateway-api) to the cluster.
+Deploys [Gateway API](https://github.com/kubernetes-sigs/gateway-api) CRDs for next-generation Kubernetes ingress.
 
-Gateway API is an official Kubernetes project focused on L4 and L7 routing in Kubernetes.
+Gateway API provides expressive, role-oriented routing resources (Gateway, HTTPRoute, GRPCRoute) that supersede Ingress, enabling advanced traffic management like header-based routing, traffic splitting, and cross-namespace references with portable configurations.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "gateway_api" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

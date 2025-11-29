@@ -1,8 +1,8 @@
 ## Sumicare [Loki](https://github.com/grafana/loki) OpenTofu Modules
 
-This module deploys [Loki](https://github.com/grafana/loki) to the cluster.
+Deploys [Loki](https://github.com/grafana/loki) for cost-effective log aggregation.
 
-Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus.
+Loki indexes only metadata (labels) rather than full text, dramatically reducing storage costs while enabling fast queries through label-based filtering and LogQL, with native Grafana integration for unified metrics-logs correlation.
 
 ### Usage
 
@@ -44,5 +44,8 @@ module "loki" {
 ### License
 
 Copyright 2025 Sumicare
+
+By using this project for academic, advertising, enterprise, or any other purpose, <br/>
+you grant your **Implicit Agreement** to the Sumicare OSS [Terms of Use](../../OSS_TERMS.md).
 
 Sumicare Kubernetes OpenTofu Modules Licensed under the terms of [Apache License, Version 2.0](../../LICENSE).

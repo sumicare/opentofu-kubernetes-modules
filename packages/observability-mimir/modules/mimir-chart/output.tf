@@ -5482,7 +5482,7 @@ resource "kubernetes_stateful_set" "release_name_mimir_kafka" {
 
         container {
           name  = "kafka"
-          image = "apache/kafka-native:4.1.0"
+          image = "apache/kafka-native:4.1.0@sha256:9a9d16e608944f8f7d30c75c5a5fec0d59f44893f27536b4f0cd6f19ae09164d"
 
           port {
             name           = "kafka"
